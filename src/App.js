@@ -91,6 +91,13 @@ height="28"
             <div v-for="card in cardData" key="card.id" className="column is-4">
               <div className="card large">
                 <div className="card-image">
+                  
+                </div>
+              </div>
+            </div>
+            <div v-for="card in cardData" key="card.id" className="column is-4">
+              <div className="card large">
+                <div className="card-image">
                   <figure className="image is-16by16">
                     <img src="07bluemarbleearth_thumbnail.jpg" alt="Image"/>
                   </figure>
@@ -126,7 +133,7 @@ height="28"
        ) 
        : ('sentiment demo UI :')}
 
-      <div>Hello {value} ! 2021</div>
+      {/* <div>Hello {value} ! 2021</div> */}
       
      
 

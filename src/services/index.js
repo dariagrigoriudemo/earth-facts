@@ -1,6 +1,6 @@
 import {cosmosDbApi, testApi, sentimentApi, authApi} from './api';
 
-const isProduction = true; 
+const isProduction = process.env.NODE_ENV != 'development'; 
 
 export const services = {
     facts : isProduction ? cosmosDbApi: testApi,

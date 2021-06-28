@@ -1,10 +1,11 @@
 :root {
     --bg: #071e36;
-    --card-bg: #041221;
+    --card-bg: #000000;
   }
   
   body {
-    background: var(--bg);
+    background: var(--card-bg);
+    color : ghostwhite;
   }
   
   .box {
@@ -40,6 +41,10 @@
     margin-bottom: 0 !important;
   }
   
+  .title {
+    color: ghostwhite;
+  }
+
   .footer {
     background: var(--card-bg);
     color: ghostwhite;

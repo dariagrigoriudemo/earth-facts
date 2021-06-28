@@ -12,7 +12,7 @@ export const cosmosDbApi = {
 export const testApi = 
 {
     getFacts: async () => {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/todos');
+        const response = await axios.get('http://localhost:7071/api/getFacts');
 
         return response.data
     }
