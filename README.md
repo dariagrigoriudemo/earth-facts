@@ -7,4 +7,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Start local project with website emulator  :
 > npm run build
 
-> swa start .\build --api .\api\getFacts\
+> swa start .\build --api .\api\

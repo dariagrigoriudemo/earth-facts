@@ -66,7 +66,7 @@ height="28"
         <Navbar.Item href="#" onClick = {() => dispatch(uiCommands.setTab("facts"))}>Earth Facts</Navbar.Item>
       {/* </Navbar.Container>
       <Navbar.Container position="end" align = "right"> */}
-        <Navbar.Item href="#" onClick = {() => dispatch(uiCommands.setTab("sentiment"))}>Earth Sentiment</Navbar.Item>
+        {/* <Navbar.Item href="#" onClick = {() => dispatch(uiCommands.setTab("sentiment"))}>Earth Sentiment</Navbar.Item> */}
       </Navbar.Container>
     </Navbar.Menu>
   </Navbar>
@@ -76,11 +76,11 @@ height="28"
     { tabName === "facts" ? (
 
       <div className="section">
-        <div className="columns">
+        {/* <div className="columns">
           <div className="column has-text-centered">
             <h1 className="title" styles="color: ghostwhite;">{tabName === 'facts' ? 'Earth Facts Demo' : 'Earth Sentiment Demo' }</h1><br/>
           </div>
-        </div>
+        </div> */}
 
         {errors !=null 
           ? ('Loading error' + errors) 
@@ -88,41 +88,42 @@ height="28"
             loading ? 'Loading earth facts...' 
             :(
           <div id="app" className="row columns is-multiline">
-            <div v-for="card in cardData" key="card.id" className="column is-4">
+            <div v-for="card in cardData" key="card.id" className="column is-3">
               <div className="card large">
                 <div className="card-image">
                   
                 </div>
               </div>
             </div>
-            <div v-for="card in cardData" key="card.id" className="column is-4">
+            <div v-for="card in cardData" key="card.id" className="column is-6">
               <div className="card large">
-                <div className="card-image">
-                  <figure className="image is-16by16">
-                    <img src="07bluemarbleearth_thumbnail.jpg" alt="Image"/>
-                  </figure>
-                </div>
+                
                 <div className="card-content">
+                  <div className="media-content">
+                        {/* <p className="title is-4 no-padding">{{card.user.title}}</p> */}
+                        <p/>
+                          <span className="title is-6"/>
+                          {facts.recommendedFact.details}
+                            {/* <a :href=`http://twitter.com/${card.user.handle}`> {{card.user.handle}} </a> </span> </p> */}
+                        {/* <p className="subtitle is-6">{{card.user.title}}</p> */}
+                      </div>
                   <div className="media">
                     <div className="media-left">
                       <figure className="image is-48x48">
                         {/* <img :src="card.avatar" alt="Image"> */}
                       </figure>
                     </div>
-                    <div className="media-content">
-                    {facts.recommendedFact.title}
-                      {/* <p className="title is-4 no-padding">{{card.user.title}}</p> */}
-                      <p/>
-                        <span className="title is-6"/>
-                        {facts.recommendedFact.details}
-                          {/* <a :href=`http://twitter.com/${card.user.handle}`> {{card.user.handle}} </a> </span> </p> */}
-                      {/* <p className="subtitle is-6">{{card.user.title}}</p> */}
-                    </div>
+                    
                   </div>
                   <div className="content">
                     {/* {{card.content}} */}
                     <div className="background-icon"><span className="icon-twitter"></span></div>
                   </div>
+                </div>
+                <div className="card-image">
+                  <figure className="image is-16by16">
+                    <img src="07bluemarbleearth_thumbnail.jpg" alt="Image"/>
+                  </figure>
                 </div>
               </div>
             </div>
@@ -132,12 +133,6 @@ height="28"
       </div>
        ) 
        : ('sentiment demo UI :')}
-
-      {/* <div>Hello {value} ! 2021</div> */}
-      
-     
-
-
     </div>
   </Section>;
 }

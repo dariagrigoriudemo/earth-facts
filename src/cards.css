@@ -3,6 +3,11 @@
     --card-bg: #000000;
   }
   
+  html, body, #app, #app>div {
+    height: 100%
+  }
+
+
   body {
     background: var(--card-bg);
     color : ghostwhite;
