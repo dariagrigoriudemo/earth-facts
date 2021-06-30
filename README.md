@@ -4,7 +4,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Start local project with website emulator  :
+Start local project with the Azure Static Web Apps CLI:
+
+# Image
+
+https://www.nasa.gov/multimedia/guidelines/index.html
+https://www.nasa.gov/multimedia/imagegallery/image_feature_2159.html 
+
+# Facts
+
+Wikipedia contributors. "Earth." Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 28 Jun. 2021. Web. 30 Jun. 2021.
+https://en.wikipedia.org/wiki/Earth 
+
+# Local development
 > npm run build
 
 > swa start .\build --api .\api\
+
+> http://localhost:4280
+
+> http://localhost:4280/api/demo

@@ -2,7 +2,6 @@ import axios from 'axios';
 
 export const cosmosDbApi = {
     getFacts: async () => {
-        //const response = await axios.get('http://localhost:7071/api/getFacts');
         const response = await axios.get('api/getFacts');
 
         return response.data

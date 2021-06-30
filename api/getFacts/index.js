@@ -7,7 +7,7 @@ module.exports = async function (context, req, factsData) {
         {
             name  : name ? name: "unknown",
             status : "successfully loaded",
-            // payload :factsData,
+            // payload: factsData,
             recommendedFact : factsData[rnd],
             header : req.headers,
             req : req
